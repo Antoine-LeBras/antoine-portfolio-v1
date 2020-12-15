@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="drag.css" text="style/css" />
+    <title>Drag</title>
+</head>
+<body>
+    <div class="cursor">
+        <div class="cursor_border"></div>
+    </div>
+<section class="container">
+    <img src="">
+<section class="article">
+  <div class="article_card" data-image="images/LIGHTHOUSE.jpg">WOMAN</div>
+  <div class="article_card" data-image="images/yourname.jpg">MAN</div>
+  <div class="article_card" data-image="images/LIGHTHOUSE.jpg">KID</div>
+</section>
+</section>
+</body>
+<script>
+    
+const items = document.querySelectorAll('.article_card')
+const image = document.querySelector('img')
+
+var cursor = document.querySelector('.cursor');
+var border = document.querySelector('.cursor_border');
+
+items.forEach((el) => {
+  el.addEventListener('mouseover', (e) => {
+    imageData = e.target.getAttribute('data-image')
+    console.log(imageData)
+    e.target.style.zIndex = 99
+    image.setAttribute('src', imageData)
+    cursor.classList.add("article-hover");
+
+  })
+  el.addEventListener('mousemove', (e) => {
+    image.style.top = e.clientY + 'px'
+    image.style.left = e.clientX + 'px'
+  })
+  el.addEventListener('mouseleave', (e) => {
+    e.target.style.zIndex = 1
+    image.setAttribute('src', '')
+    cursor.classList.remove("article-hover");
+  })
+})
+
+/* ------ cursor ------ */
+
+document.addEventListener('mousemove', function(mouvement) {
+
+document.body.style.setProperty('--y', mouvement.clientY + 'px');
+document.body.style.setProperty('--x', mouvement.clientX + 'px');        
+});
+
+var cursor = document.querySelector('.cursor');
+var border = document.querySelector('.cursor_border');
+document.querySelectorAll('.Bigcard').forEach(function(bigcard){
+bigcard.addEventListener('mouseenter', function(event){
+cursor.classList.add("hovering");
+cursor.textContent="click or drag";
+
+border.classList.add("hovering_border");
+});
+bigcard.addEventListener('mouseleave', function(event){
+cursor.classList.remove("hovering");
+cursor.textContent="";
+
+border.classList.remove("hovering_border");
+border.classList.add("cursor_border");
+});
+});
+
+
+</script>
+</body>
+</html>
