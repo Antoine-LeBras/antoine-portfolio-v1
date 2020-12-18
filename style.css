@@ -26,7 +26,64 @@ body{
     background-color: #FFF;
     z-index: 1;
     cursor: none;
+    animation-name: bgColor;
+    animation-delay: 0s;
+    animation-duration: 3.5s;
+    animation-iteration-count: 1;
 }
+@keyframes bgColor{
+    0%{
+        background-color: #000;
+    }
+    85%{
+        background-color: #000;
+    }
+    94%{
+        background-color: #FFF;
+    }
+    100%{
+        background-color: #FFF;
+    }
+}
+
+.gif-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: block;
+    background-color: #000;
+    border: none;
+    z-index: 200;
+    opacity: 0;
+    width: 498px;
+    height: 204px;
+    margin-left: 30%;
+    margin-top: 20%;
+    animation-name: gifAnimation;
+    animation-duration: 3.5s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+}
+
+@keyframes gifAnimation{
+    0%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    95%{
+        opacity: .3;
+    }
+    99%{
+        opacity: 0;
+    }
+    100%{
+        display: none;
+    }
+}
+
+
 :root{
     --x :20px;
     --y :20px;
@@ -99,6 +156,22 @@ header{
     top: 0;
     left: 5%;
     z-index: 98;
+    animation-name: headWorkAppear;
+    animation-delay: 1s;
+    animation-duration: 3.5s;
+    animation-iteration-count: 1;
+    opacity:1;
+}
+@keyframes headWorkAppear{
+    0%{
+        opacity: 0;
+    }
+    80%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 
@@ -158,6 +231,11 @@ h1{
     font-size: 60px;
     line-height: 72px;
     font-family: "Suisse-Bold";
+    animation-name: headWorkAppear;
+    animation-delay: 1s;
+    animation-duration: 3.5s;
+    animation-iteration-count: 1;
+    opacity:1;
 }
 
 
@@ -168,6 +246,11 @@ h1{
     margin-left: 4.5%;
     text-transform: uppercase;
     letter-spacing: 5px;
+    animation-name: headWorkAppear;
+    animation-delay: 1s;
+    animation-duration: 3.5s;
+    animation-iteration-count: 1;
+    opacity:1;
 }
 .slider-work-indicator{
     margin-right: 4%;
@@ -177,6 +260,11 @@ h1{
     text-transform: uppercase;
     letter-spacing: 1px;
     text-align: right;
+    animation-name: headWorkAppear;
+    animation-delay: 1s;
+    animation-duration: 3.5s;
+    animation-iteration-count: 1;
+    opacity:1;
 }
 
 .slider::-webkit-scrollbar {
@@ -191,6 +279,11 @@ h1{
     z-index: 3;
     margin-bottom: 100px;
     margin-top: 20px;
+    animation-name: headWorkAppear;
+    animation-delay: 1s;
+    animation-duration: 3.5s;
+    animation-iteration-count: 1;
+    opacity:1;
 }
   
 .slider-container {
