@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" text="style/css" />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
     <script src="script/slider.js" type="text/javascript"></script>
     <script src="script/cursor.js" type="text/javascript"></script>
     <script src="script/article.js" type="text/javascript"></script>
+    <script src="script/work.js" type="text/javascript"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
 	<script src="https://code.jquery.com/jquery-latest.js"></script>
     <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
-	
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <title>Antoine Le Bras</title>
 </head>
 <body>
@@ -33,7 +36,7 @@
         </div>
         <nav class="navigation">
             <ul>
-                <a href="#work"><li>My work</li></a>
+                <a href="#work"><li>Réalisations</li></a>
                 <a href="#cinema"><li>Cinema</li></a>
                 <a href="#clap"><li>ClAP</li></a>
                 <a href="#contact"><li>Contact</li></a>
@@ -41,103 +44,115 @@
         </nav>
     </header>
    
-    <h1>A french young student with a willing : use my skills in the fields of web design</h1>
+    <h1>Je suis un jeune étudiant avec une volonté : devenir UI/UX designer</h1>
 
     <div class="slider-work-title" id="work">
-        <h3>My work</h3>
+        <h3>Réalisations</h3>
     </div>
     <div class="slider-work-indicator">Drag & Click</div>
     <section class="slider">
         <div class="slider-container">
           <div class="item">
-            <h3 class="item_title">Bicloo is the key</h3>
-            <div class="item_image"><img src="images/mockup_fwc.png" alt=""></div>
+                <a href="projet/cinema-app.html">
+            <h3 class="item_title">Movie App'</h3></a>
+            <div class="item_image"><img src="images/projet/Sequence-1.jpg" alt=""></div>
+                
           </div>
           <div class="item">
-            <h3 class="item_title">Bicloo is the key</h3>
-            <div class="item_image"><img src="images/Bicloo_Malin_B.jpg" alt=""></div>
+            <a href="projet/mister-coocky.html">
+            <h3 class="item_title">Mister Coocky</h3></a>
+            <div class="item_image"><img src="images/projet/Mister-Coocky-Mockup.png" alt=""></div>
+            
           </div>
           <div class="item">
-            <h3 class="item_title">Bicloo is the key</h3>
-            <div class="item_image"><img src="images/mockup_fwc.png" alt=""></div>
+            <a href="projet/le-louvre.html">
+            <h3 class="item_title">Le Louvre concept</h3></a>
+            <div class="item_image"><img src="images/projet/Louvre-1.jpg" alt=""></div>
+            
           </div>
           <div class="item"></div>
         </div>
       </section>
+
+      
+
 
     <section class="cinema" id="cinema">
         <div class="cinema_title">
             <h2>Remember the titans</h2>
             <div class="cinema_information">
                 <p class="cinema_information_time">2h12</p>
-                <p class="cinema_information_type">Adventure - S/F</p>
+                <p class="cinema_information_type">Aventure - S/F</p>
             </div>
         </div>
-        <div class="cinema_link_article">Discover 
+        <a href="#"><div class="cinema_link_article">Discover 
             <div class="cinema_link_icon"><img src="images/arrow_follow.svg" alt=""></div>
-        </div>
+        </div></a>
         <div class="cinema_clap_logo">
             <div class="cinema_clap_logo_clap"><img src="images/Clap.svg" alt=""></div>
-            <div class="cinema_clap_logo_mojo">movie talking</div>
+            <div class="cinema_clap_logo_mojo">movie tal</div>
+            <div class="cinema_clap_logo_mojo_end">king</div>
         </div>
     </section>
 
     <section class="introduction_article">
-        <div class="introduction_article_baseline">lking</div>
         <article class="introduction_article_top">
             <div class="introduction_article_top_image"><img src="images/yourname.jpg" alt="voila"></div>
             <div class="introduction_article_top_texte">
-                <h3>Last topics</h3>
-                <p>Aenean amet, posuere sit in sed tristique arcu aenean diam. Pharetra aenean sit tellus quis lacus ac. 
-                    Ultrices faucibus semper egestas semper arcu, donec. Neque, in venenatis tortor hendrerit venenatis, ut. Fringilla feugiat pretium egestas duis at quis amet in. 
-                <p>A faucibus ac consectetur lacus, enim ipsum in. Aenean ipsum netus eget nunc id fringilla nec ut.
-                    Commodo convallis eleifend nulla quis arcu morbi urna. Ultrices cursus enim, convallis molestie sed pharetra in. </p>
+                <h3>Dernier sujet</h3>
+                <p>Aujourd’hui la concurrence se durcit sur les plateformes de streaming et Netflix voit arriver de sérieux
+                     concurrents depuis ces deux dernières années. Entre Disney qui propose une plateforme qui sera ravir 
+                     les parents et les enfants avec les Disney et Pixar, ainsi que les Marvel qui ont connu un franc succès
+                      au Box-Office mondial sur ces dix dernières années.
+                <p>Un autre grand concurrent est la plateforme proposée par Apple. Celle-ci a su attirer de grands noms
+                     de scénaristes, réalisateurs et acteurs et base son positionnement sur la qualité et l’originalité 
+                     des programmes (films et séries) qu’elle proposera. </p>
                 </p>
             </div>
         </article>
         <article class="introduction_article_bottom">
             <div class="introduction_article_bottom_texte">
-                <p>Aenean amet, posuere sit in sed tristique arcu aenean diam. Pharetra aenean sit tellus quis lacus ac. Ultrices faucibus semper egestas semper arcu, donec. Neque,</p>
-                <div class="introduction_article_button">discover all</div>
+                <p>Ce dernier facteur, la proposition de programmes originaux est le cœur d’une bataille qu’ont décidé de se livrer Netflix, PrimeVideo, Apple et pour la France OCS et Canal+...</p>
+                <a href="#articleCinema"><div class="introduction_article_button">Tout découvrir</div></a>
             </div>
             <div class="introduction_article_bottom_image"><img src="images/LIGHTHOUSE.jpg" alt=""></div>
         </article>
     </section>
 
-    <section class="article_container">
+    <section class="article_container" id="articleCinema">
 
         <div>
             <img class="image-article" src="">
         </div>
-        <h3>All Topics</h3>
+        <h3>Tous les sujets</h3>
         <div class="article_card" data-image="images/art-VOD-plateform.jpg">
-            <h4>If VOD's platform were social media?</h4>
+            <a href="article/streaming.html">
+            <h4>Et si les plateformes de streaming devennaient des réseaux sociaux ?</h4>
             <div class="article_card_link">
-                <div class="article_card_link_text">Read</div>
+                <div class="article_card_link_text">Lire</div>
                 <div class="article_card_link_icon"></div>
             </div>
+            </a>
         </div>
         <div class="article_card" data-image="images/art-remember-the-titans.jpg">
-            <h4>How Remember the titans change my way of thinking</h4>
+            <a href="article/remember-titans.html">
+            <h4>Comment "Remember the titans" a changé ma façon de penser</h4>
             <div class="article_card_link">
-                <div class="article_card_link_text">Read</div>
+                <div class="article_card_link_text">Lire</div>
                 <div class="article_card_link_icon"></div>
             </div>
+            </a>
         </div>
         <div class="article_card" data-image="images/art-hostiles.jpg">
-            <h4>Hostiles : when silence match with beauty</h4>
+            <a href="article/hostiles.html">
+            <h4>Hostiles : quand le silence rencontre la beauté</h4>
             <div class="article_card_link">
-                <div class="article_card_link_text">Read</div>
+                <div class="article_card_link_text">Lire</div>
                 <div class="article_card_link_icon"></div>
             </div>
+            </a>
         </div>
-        <div class="article_card" data-image="images/art-actor.jpg">
-            <h4>actor: how to separate the character and the person</h4>
-            <div class="article_card_link">
-                <div class="article_card_link_text">Read</div>
-                <div class="article_card_link_icon"></div>
-            </div>
-        </div>
+        
     </section>
 
     <section class="clap_container" id="clap">
@@ -145,22 +160,22 @@
             <div class="clap_logo_image"><img src="images/CLAP_Logo.svg" alt=""></div>
         </div>
         <div class="clap_manifesto">
-            <p>The idea of CLAP is to talk about the cinema in large or very precise way. CLAP is trying to find an answer or a land to explore for 
-                subjects that revolve around the cinema. CLAP is the result of a 22 year of popcorn eating in front of a big screen and hours of 
-                learning famous quotes and reading specialized magazines.</p>
-            <p>So this is me, a 22-year-old French student in the digital sphere speaking about his vision of the cinema and all that includes it. 
-                You will find topics about the latest movies and series that I have seen, VOD’s platform and my vision of the cinema business.</p>
+            <p>Le cinéma est dans mon sang depuis que je suis tout petit, à la manière d'Obelix, je suis tombé dedans étant petit.  
+                 Je suis surtout un rêveur, je suis quelque part toujours un enfant qui passe ses journées à imaginer des situations
+                  des histoires à raconter, peaufiner et développer celles qui existent et explorer celles de demain.</p>
+            <p>Me voici, un rêveur à 22 ans et qui souhaite, accompagner ce monde qui l'a lui a tant apporté, à raconter des histoires,
+                 des aventures sur le support numérique actuel et à venir.</p>
             <h4>Let's talk about movies</h4>
         </div>
     </section>
 
     <section class="contact_container" id="contact">
-        <h3>get in touch !</h3>
-        <h5>antoine.lebras1@gmail.com</h5>
+        <h3>Envie d'échanger ?</h3>
+        <h5><a href="mailto:antoine.lebras1@gmail.com"> antoine.lebras1@gmail.com</a></h5>
         <div class="contact_link">
-            <div>Linkedin</div>
-            <div>Resume</div>
-            <div>Phone</div>
+            <div><a href="#">Linkedin</a></div>
+            <div><a href="images/Antoine-Le-Bras-Resume.pdf" target="_Blank">CV</a></div>
+            <div><a href="tel:+33652436967">Telephone</a></div>
         </div>
     </section>
 </body>
@@ -234,5 +249,6 @@ sr.reveal('.contact_container', {
     distance: "100px",
     origin: "bottom"
 });
+
 </script>
 </html>
