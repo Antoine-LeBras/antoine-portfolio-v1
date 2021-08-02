@@ -1,254 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" text="style/css" />
     <link rel="icon" type="image/png" href="images/favicon.png" />
-    <script src="script/slider.js" type="text/javascript"></script>
-    <script src="script/cursor.js" type="text/javascript"></script>
-    <script src="script/article.js" type="text/javascript"></script>
-    <script src="script/work.js" type="text/javascript"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
-	<script src="https://code.jquery.com/jquery-latest.js"></script>
-    <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
-	<link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    <title>Antoine Le Bras</title>
+
+    <title>Antoine Le Bras | Portfolio</title>
 </head>
+
 <body>
-    <div class="cursor">
-        <div class="cursor_border"></div>
-    </div>
-    <div class="gif-container">
-        <div class="tenor-gif-embed" data-postid="14084009" data-share-method="host" data-width="100%" data-aspect-ratio="2.4411764705882355">
-            <a href="https://tenor.com/view/entr%c3%a9e-come-in-incoming-oss117-jean-dujardin-gif-14084009">Entrée Come In GIF</a> from 
-            <a href="https://tenor.com/search/entr%C3%A9e-gifs">Entrée GIFs</a>
-        </div>
-    </div>  
-    <header>
-        <div class="logo">
-            <svg width="47" height="34" viewBox="0 0 47 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 9.86894C0 6.64643 4.43396 5.8408 9.53302 5.23658V5.03517C9.53302 2.8197 8.20283 2.21548 6.65094 2.21548C5.09906 2.21548 3.76887 3.0211 3.76887 4.63236H0.665094C0.886792 1.81266 3.32547 0 6.65094 0C9.97641 0 12.8585 1.40985 12.6368 5.63939C12.6368 6.24361 12.6368 7.85487 12.6368 9.06331C12.6368 10.6746 12.8585 12.4872 13.0802 13.4943H10.1981C10.1981 12.89 9.97641 12.6886 9.97641 11.6816C9.08962 13.0914 7.31604 13.6957 5.32075 13.6957C2.21698 13.6957 0 12.0844 0 9.86894ZM9.75471 7.25065C5.32075 7.65346 3.32547 8.25768 3.32547 9.66753C3.32547 10.876 4.43396 11.4802 5.98585 11.4802C8.42453 11.4802 9.75471 10.4732 9.75471 8.25768V7.25065Z" fill="#14040C"/>
-                <path d="M24.165 33.4335H22.6132V0H24.165V33.4335Z" fill="#14040C"/>
-                <path d="M41.0142 33.8364C38.7972 33.8364 37.2453 33.0307 36.1368 31.4195V33.6349H34.585V15.9111H36.1368V22.759C37.2453 21.1477 38.7972 20.3421 41.0142 20.3421C44.3397 20.3421 47.0001 22.759 47.0001 27.1899C47.0001 31.6209 44.3397 33.8364 41.0142 33.8364ZM40.5708 32.4265C43.2312 32.4265 45.2265 30.4124 45.2265 26.9885C45.2265 23.5646 43.2312 21.5505 40.5708 21.5505C38.3538 21.5505 35.9152 23.1618 35.9152 26.9885C35.9152 30.8152 38.3538 32.4265 40.5708 32.4265Z" fill="#14040C"/>
-            </svg>
-        </div>
-        <nav class="navigation">
-            <ul>
-                <a href="#work"><li>Réalisations</li></a>
-                <a href="#cinema"><li>Cinema</li></a>
-                <a href="#clap"><li>ClAP</li></a>
-                <a href="#contact"><li>Contact</li></a>
-            </ul>
+    <header class="navigation-container">
+        <div class="navigation-logo"><img src="logo.svg" alt="logo Antoine Le Bras portfolio"></div>
+        <nav class="navigation-ancre">
+            <li>
+                <ul><a href="#realisation">réalisations</a></ul>
+                <ul><a href="#profil">à propos</a></ul>
+                <ul><a href="#contact">contact</a></ul>
+            </li>
         </nav>
     </header>
-   
-    <h1>Je suis un jeune étudiant avec une volonté : devenir UI/UX designer</h1>
 
-    <div class="slider-work-title" id="work">
-        <h3>Réalisations</h3>
+    <section class="introduction-container">
+        <h1>Je suis <span>alb</span>, <br> UX/UI designer en devenir</h1>
+        <div class="introduction-image-top"><img src="images/top-image.jpg" alt=""></div>
+        <div class="introduction-image-bottom"><img src="images/Louvre-3.png" alt=""></div>
+    </section>
+
+    <div class="postulat-text">
+        Étudiant à l’ECV Digital, j’ai développé des compétences allant de la stratégie
+        webmarketing jusqu’au développement de la solution. Ce panel de compétences
+        larges m’offre une approche plus globale en UX/UI. J’aspire à rendre l’univers
+        digital plus juste, innovant et attentif aux évolutions des comportements
+        des utilisateurs.
     </div>
-    <div class="slider-work-indicator">Drag & Click</div>
-    <section class="slider">
-        <div class="slider-container">
-          <div class="item">
-                <a href="projet/cinema-app.html">
-            <h3 class="item_title">Movie App'</h3></a>
-            <div class="item_image"><img src="images/projet/Sequence-1.jpg" alt=""></div>
-                
-          </div>
-          <div class="item">
-            <a href="projet/mister-coocky.html">
-            <h3 class="item_title">Mister Coocky</h3></a>
-            <div class="item_image"><img src="images/projet/Mister-Coocky-Mockup.png" alt=""></div>
-            
-          </div>
-          <div class="item">
-            <a href="projet/le-louvre.html">
-            <h3 class="item_title">Le Louvre concept</h3></a>
-            <div class="item_image"><img src="images/projet/Louvre-1.jpg" alt=""></div>
-            
-          </div>
-          <div class="item"></div>
-        </div>
-      </section>
 
-      
-
-
-    <section class="cinema" id="cinema">
-        <div class="cinema_title">
-            <h2>Remember the titans</h2>
-            <div class="cinema_information">
-                <p class="cinema_information_time">2h12</p>
-                <p class="cinema_information_type">Aventure - S/F</p>
+    <main class="realisation-container">
+        <section class="realisation-section" id="realisation">
+            <h2>réalisations</h2>
+            <div class="realisation-top">
+                <div class="realisation-top-thumbnail">
+                    <a href="project/cinema-app.html">
+                        <div class="realisation-top-button">➞</div>
+                    </a>
+                </div>
+                <div class="realisation-top-info">
+                    <h3>Séquence</h3>
+                    <p>Projet d'école d'application engagée. L'objectif : soutenir le cinéma indépendant dans la
+                        période pandémique</p>
+                </div>
             </div>
-        </div>
-        <a href="#"><div class="cinema_link_article">Discover 
-            <div class="cinema_link_icon"><img src="images/arrow_follow.svg" alt=""></div>
-        </div></a>
-        <div class="cinema_clap_logo">
-            <div class="cinema_clap_logo_clap"><img src="images/Clap.svg" alt=""></div>
-            <div class="cinema_clap_logo_mojo">movie tal</div>
-            <div class="cinema_clap_logo_mojo_end">king</div>
+            <div class="realisation-middle">
+                <div class="realisation-middle-thumbnail">
+                    <a href="project/mister-coocky.html">
+                        <div class="realisation-middle-button">➞</div>
+                    </a>
+                </div>
+                <div class="realisation-middle-info">
+                    <h3>Mister Coocky</h3>
+                    <p>Réalisation du site vitrine de l'application Mister Coocky. Application qui aide le
+                        quotidien des propriétaires d'animaux par 3 axes : sain, malin et responsable</p>
+                </div>
+            </div>
+            <div class="realisation-bottom">
+                <div class="realisation-bottom-thumbnail">
+                    <a href="project/le-louvre.html">
+                        <div class="realisation-bottom-button">➞</div>
+                    </a>
+                </div>
+                <div class="realisation-bottom-info">
+                    <h3>Concept : Le Louvre</h3>
+                    <p>Refonte de la homepage du musée Le Louvre.</p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+
+    <section class="about-container" id="profil">
+        <h2>à propos</h2>
+        <p><strong>Antoine Le Bras / alb</strong><br>Je suis un jeune rêveur de 23 ans qui a pour objectif de comprendre
+            le
+            monde qui m'entoure. Pour cela,
+            j'utilise un milieu porteur d'avenir, le web. Développer des connaissances dans cet univers
+            avec pour objectif de rendre le monde qui m'entoure plus responsable. Passionné de cinéma et de
+            sport, ce
+            rêveur ne souhaite que partager ses histoires et de les concrétiser.
+        </p>
+    </section>
+
+    <section class="contact-container" id="contact">
+        <h2>envie d'échanger ?</h2>
+        <div class="contact-informations-container">
+            <div class="contact-informations-cards">
+                <h3>Mail</h3>
+                <p><a href="mailto:antoine.lebras01@gmail.com">antoine.lebras01@gmail.com</a></p>
+            </div>
+            <div class="contact-informations-cards">
+                <h3>CV et plus d'informations</h3>
+                <p><a target="_Blank" href="https://www.linkedin.com/in/antoine-le-bras-031085131/">linkedin</a></p>
+            </div>
+            <div class="contact-informations-cards">
+                <h3>Téléphone</h3>
+                <p><a href="tel:+33652436967">+33 6 52 43 69 67</a></p>
+            </div>
         </div>
     </section>
 
-    <section class="introduction_article">
-        <article class="introduction_article_top">
-            <div class="introduction_article_top_image"><img src="images/yourname.jpg" alt="voila"></div>
-            <div class="introduction_article_top_texte">
-                <h3>Dernier sujet</h3>
-                <p>Aujourd’hui la concurrence se durcit sur les plateformes de streaming et Netflix voit arriver de sérieux
-                     concurrents depuis ces deux dernières années. Entre Disney qui propose une plateforme qui sera ravir 
-                     les parents et les enfants avec les Disney et Pixar, ainsi que les Marvel qui ont connu un franc succès
-                      au Box-Office mondial sur ces dix dernières années.
-                <p>Un autre grand concurrent est la plateforme proposée par Apple. Celle-ci a su attirer de grands noms
-                     de scénaristes, réalisateurs et acteurs et base son positionnement sur la qualité et l’originalité 
-                     des programmes (films et séries) qu’elle proposera. </p>
-                </p>
-            </div>
-        </article>
-        <article class="introduction_article_bottom">
-            <div class="introduction_article_bottom_texte">
-                <p>Ce dernier facteur, la proposition de programmes originaux est le cœur d’une bataille qu’ont décidé de se livrer Netflix, PrimeVideo, Apple et pour la France OCS et Canal+...</p>
-                <a href="#articleCinema"><div class="introduction_article_button">Tout découvrir</div></a>
-            </div>
-            <div class="introduction_article_bottom_image"><img src="images/LIGHTHOUSE.jpg" alt=""></div>
-        </article>
-    </section>
+    <footer class="footer">Antoine Le Bras</footer>
 
-    <section class="article_container" id="articleCinema">
-
-        <div>
-            <img class="image-article" src="">
-        </div>
-        <h3>Tous les sujets</h3>
-        <div class="article_card" data-image="images/art-VOD-plateform.jpg">
-            <a href="article/streaming.html">
-            <h4>Et si les plateformes de streaming devennaient des réseaux sociaux ?</h4>
-            <div class="article_card_link">
-                <div class="article_card_link_text">Lire</div>
-                <div class="article_card_link_icon"></div>
-            </div>
-            </a>
-        </div>
-        <div class="article_card" data-image="images/art-remember-the-titans.jpg">
-            <a href="article/remember-titans.html">
-            <h4>Comment "Remember the titans" a changé ma façon de penser</h4>
-            <div class="article_card_link">
-                <div class="article_card_link_text">Lire</div>
-                <div class="article_card_link_icon"></div>
-            </div>
-            </a>
-        </div>
-        <div class="article_card" data-image="images/art-hostiles.jpg">
-            <a href="article/hostiles.html">
-            <h4>Hostiles : quand le silence rencontre la beauté</h4>
-            <div class="article_card_link">
-                <div class="article_card_link_text">Lire</div>
-                <div class="article_card_link_icon"></div>
-            </div>
-            </a>
-        </div>
-        
-    </section>
-
-    <section class="clap_container" id="clap">
-        <div class="clap_logo">
-            <div class="clap_logo_image"><img src="images/CLAP_Logo.svg" alt=""></div>
-        </div>
-        <div class="clap_manifesto">
-            <p>Le cinéma est dans mon sang depuis que je suis tout petit, à la manière d'Obelix, je suis tombé dedans étant petit.  
-                 Je suis surtout un rêveur, je suis quelque part toujours un enfant qui passe ses journées à imaginer des situations
-                  des histoires à raconter, peaufiner et développer celles qui existent et explorer celles de demain.</p>
-            <p>Me voici, un rêveur à 22 ans et qui souhaite, accompagner ce monde qui l'a lui a tant apporté, à raconter des histoires,
-                 des aventures sur le support numérique actuel et à venir.</p>
-            <h4>Let's talk about movies</h4>
-        </div>
-    </section>
-
-    <section class="contact_container" id="contact">
-        <h3>Envie d'échanger ?</h3>
-        <h5><a href="mailto:antoine.lebras1@gmail.com"> antoine.lebras1@gmail.com</a></h5>
-        <div class="contact_link">
-            <div><a href="#">Linkedin</a></div>
-            <div><a href="images/Antoine-Le-Bras-Resume.pdf" target="_Blank">CV</a></div>
-            <div><a href="tel:+33652436967">Telephone</a></div>
-        </div>
-    </section>
 </body>
-<script>
-    const slider = document.querySelector('.slider');
 
-    const sliderImpetus = new Impetus({
-    source: slider,
-    boundX: [0, slider.scrollWidth - slider.clientWidth],
-    multiplier: -1,
-    update(x) {
-        this.scrollLeft = x;
-    }
-    });
-
-    
-const sr = ScrollReveal();
-
-// <!-- Hero header image -->
-sr.reveal('.slider-work-title', {
-     delay: 200,
-    duration: 1300,
-    distance: "100px",
-    origin: "bottom"
-});
-
-sr.reveal('.slider-work-indicator', {
-     delay: 200,
-    duration: 1300,
-    distance: "100px",
-    origin: "bottom"
-});
-
-sr.reveal('.slider', {
-     delay: 200,
-    duration: 1300,
-    distance: "100px",
-    origin: "bottom"
-});
-
-sr.reveal('.cinema', {
-     delay: 200,
-    duration: 1300,
-    distance: "100px",
-    origin: "bottom"
-});
-
-sr.reveal('.introduction_article_top', {
-     delay: 200,
-    duration: 1300,
-    distance: "100px",
-    origin: "bottom"
-});
-sr.reveal('.introduction_article_bottom', {
-     delay: 200,
-    duration: 1300,
-    distance: "100px",
-    origin: "bottom"
-});
-
-sr.reveal('.clap_container', {
-     delay: 200,
-    duration: 1300,
-    distance: "100px",
-    origin: "bottom"
-});
-
-sr.reveal('.contact_container', {
-     delay: 200,
-    duration: 1300,
-    distance: "100px",
-    origin: "bottom"
-});
-
-</script>
 </html>
